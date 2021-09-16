@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My basic homepage website</title>
+    <link rel="shortcut icon" type="image" href="./asset/image/laugh-60-1126586.png">
+
+    <!--Reset css (normallizer css cdn)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!--Bootstrap v4.0-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&display=swap" rel="stylesheet">
+
+    <!--fonts awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
+
+    <!--Local files-->
+    <link rel="stylesheet" href="./asset/css/main.css">
+
+</head>
+
+<body>
+
+    <!-- MAIN NAVIGAION BAR -->
+    <header>
+        <div class="mycv">MyCV</div>
+        <nav>
+            <ul>
+                <li class=""> <a href="#"> <i class="fab fa-facebook"> Facebook</i></a> </li>
+                <li class=""> <a href="#"> <i class="fab fa-instagram"> Instagram</i></a> </li>
+                <li class=""> <a href="#"> <i class="fab fa-twitter"> Twitter</i></a> </li>
+                <li class=""> <a href="#"> <i class="fab fa-github"> Github</i></a> </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+    </header>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+    <!-- Content about me -->
+    <div id="content" class="main-homepage">
+        <div class="homepage-1">
+
+            <div class="General">
+                <img src="./asset/image/Shinichi.jpg" alt="Doan Trung Kien" title="Doan Trung Kien">
+                <h1 style="margin-top: 20px;">KUDO SHINICHI</h1>
+                <h3>Sinh viên lập trình</h3>
+            </div>
+            <br>
+
+            <div class="Information">
+                <i class="fas fa-address-card" title="address card"> THÔNG TIN LIÊN HỆ</i>
+                <br>
+                <i class="fas fa-phone" title="phone" style="margin-top: 20px;"> +84 123456789</i>
+                <br>
+                <i class="fas fa-envelope" title="mail" style="margin-top: 20px;">
+                    kudoshinichi10082002@developer.com</i>
+                <br>
+                <i class="fas fa-map-marker" title="location" style="margin-top: 20px;"> Bình Thạnh, thành phố Hồ
+                    Chí Minh, Việt Nam</i>
+            </div>
+            <br>
+
+            <div class="Career">
+                <i class="fas fa-leaf" title="leaf"> MỤC TIÊU NGHỀ NGHIỆP</i>
+                <p>Em là sinh viên vừa hoàn thành chương trình học chuyên ngành CNTT tại MBN Academy. Em cũng đã đạt
+                    <br>
+                    được chứng chỉ CCNA. Với kiến thức chuyên môn đã được học, em mong muốn tìm được công việc phù
+                    <br>
+                    hợp đó là vị trí nhân viên quản trị mạng để có thể vận dụng và phát huy tốt khả năng của mình.
+                    <br>
+                    Những kinh nghiệm làm việc thực tế mà em tích luỹ được sẽ là cơ sở để em đạt được mục tiêu trở
+                    <br>
+                    thành một chuyên gia quản trị mạng giỏi trong tương lai.
+                </p>
+            </div>
+            <br>
+            <div class="Contact">
+                <i class="fas fa-flag" title="flag"> NGƯỜI LIÊN HỆ</i>
+                <p>Chưa có thông tin.</p>
+            </div>
+        </div>
+
+
+        <div class="homepage-2">
+
+            <div class="Education">
+                <i class="fas fa-graduation-cap" title="gradution cap"> HỌC VẤN</i>
+                <table>
+                    <p>
+                        - Tốt nghiệp chuyên ngành Công nghệ thông tin, Công nghệ phần mềm hoặc Trường đào tạo <br>
+                        lập trình viên Quốc Tế (NIIT, Aptech). <br>
+                        - Có kinh nghiệm lập trình IOS từ 6 tháng – 1 năm. <br>
+                        - Thành thạo xCode, Swift, Objective-C. <br>
+                    </p>
+            </div>
+            <br>
+
+            <div class="Experience-Work">
+                <i class="fas fa-briefcase" title="work bag"> KINH NGHIỆM LÀM VIỆC</i>
+                <p>Tốt nghiệp chuyên ngành công nghệ phần mềm tại MBN Academy. Hơn 05 năm kinh nghiệm lập trình
+                    <br>
+                    Web tại công ty VinaDesign.vn. Thành thạo ngôn ngữ lập trình C#, ASP.NET , Python , Java , PHP. Có
+                    <br>
+                    kiến thức về UI/UX, .NET, .NET core, jQuery, CSS, HTML, JavaScript, TypeScript, Angular, <br>
+                    Knockout, Bootstrap, SQL Server, MySQL. Tôi cũng đã đạt được chứng chỉ lập trình viên ứng dụng
+                    <br>
+                    Mobile. Tôi mong muốn được đa dạng hoá nghề nghiệp với vị trí công việc lập trình viên Mobile
+                    <br>
+                    của công ty ABC nhằm phát huy được tối đa năng lực bản thân, nâng cao kiến thức công việc. Tôi
+                    <br>
+                    hướng đến mục tiêu sẽ trở thành một trưởng nhóm lập trình Mobile giỏi của công ty trong năm tiếp
+                    <br>
+                    theo.
+                </p>
+            </div>
+            <br>
+
+            <div class="Awards">
+                <i class="fas fa-trophy" title="cup"> GIẢI THƯỞNG</i>
+                <p>Chưa có giải thưởng.</p>
+            </div>
+            <br>
+
+            <div class="Skills">
+                <i class="fas fa-pencil-alt" title="pencil"> KĨ NĂNG</i>
+                <p>Kiến thức chuyên ngành công nghệ phần mềm, có chứng chỉ lập trình IOS (Objective-C). Tôi thành
+                    <br>
+                    thạo xCode, Swift. Khả năng đọc hiểu tài liệu kỹ thuật bằng tiếng Anh tốt và có kinh nghiệm phát
+                    <br>
+                    hành ứng dụng lên AppStore. Tôi mong muốn được làm việc với vị trí lập trình viên IOS trong một
+                    <br>
+                    môi trường làm việc chuyên nghiệp, năng động và sáng tạo như MuaSamNhanh để có thể vận dụng tối
+                    <br>
+                    ưu và hiệu quả những kiến thức của mình phát triển thành công các sản phẩm/dịch vụ đáp ứng tốt
+                    <br>
+                    nhu cầu của công ty. Tôi hướng đến mục tiêu trở thành một chuyên gia lập trình Mobile thành công
+                    <br>
+                    và trở thành một nhân viên cấp quản lý giỏi trong 03 năm tới.
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

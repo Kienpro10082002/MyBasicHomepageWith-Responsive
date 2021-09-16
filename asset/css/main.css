@@ -1,0 +1,214 @@
+body {
+    background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #2f3542;
+    font-family: 'EB Garamond';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+
+/* Navigation bar about me */
+
+header {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #1e272e, #485460);
+    width: 100%;
+    box-sizing: border-box;    
+}
+
+header .mycv {
+    color: white;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    float: left;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    margin: 0%;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover {
+    color:white;
+    background-color: teal;
+}
+
+.menu-toggle {
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1023px) {
+    header {
+        padding: 0 20px;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav{
+        position: absolute;
+        width: 100%;
+        height: calc(100vb - 50px);
+        background-image: linear-gradient(to bottom right, #1e272e, #485460);
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+}
+
+/* id=content and class=main-homepage of homepage-1 and homepage-2 */
+
+.main-homepage {
+    background-color: auto;
+    display: flex;
+    justify-content: center;
+    margin: 150px 80px 100px 80px;
+    text-align: center;
+    width: auto;
+}
+
+.homepage-1 {
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+    width: auto;
+}
+
+.homepage-2 {
+    color: white;
+    margin: auto 10px;
+    padding: 30px;
+    width: auto;
+}
+
+@media only screen and (max-width: 1023px) {
+    .main-homepage {
+        display: block;
+        content: ".";
+    }
+}
+
+/* My avatar */
+
+img {
+    border-radius: 100rem;
+}
+
+/*
+    homepage-1 GENERAL
+*/
+
+.General {
+    margin-left: 10px;
+}
+
+.Information {
+    margin-left: 10px;
+}
+
+.Career {
+    margin-left: 10px;
+}
+
+.Contact {
+    margin-left: 10px;
+}
+
+/*
+    homepage-2 GENERAL
+*/
+
+.Education {
+    margin-left: 10px;
+}
+
+.Experience-Work {
+    margin-left: 10px;
+}
+
+.Awards {
+    margin-left: 10px;
+}
+
+.Skills {
+    margin-left: 10px;
+}
+
+/* ******************************************************************************************************* */
+
+/* Homepage-1 about i tag*/
+
+div.Information i.fa-address-card {
+    font-size: 20px;
+}
+
+div.Career i.fa-leaf {
+    font-size: 20px;
+}
+
+div.Contact i.fa-flag {
+    font-size: 20px;
+}
+
+/* Homepage-2 about i tag*/
+
+div.Education i.fa-graduation-cap{
+    font-size: 20px;
+}
+
+div.Experience-Work i.fa-briefcase {
+    font-size: 20px;
+}
+
+div.Awards i.fa-trophy {
+    font-size: 20px;
+}
+
+div.Skills i.fa-pencil-alt {
+    font-size: 20px;
+}
+
+
